@@ -1,73 +1,114 @@
-# Welcome to your Lovable project
+# 🥷 Gas Ninja Bot
 
-## Project info
+**Autonomous Gas Intelligence Agent on BNB Chain**
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+A production-grade Web3 analytics dashboard for monitoring, predicting, and optimizing gas costs on BNB Chain. The Gas Ninja Bot acts as an autonomous agent that executes transactions at optimal gas prices, saving you money on every interaction.
 
-## How can I edit this code?
+![Gas Ninja Bot](https://img.shields.io/badge/BNB_Chain-F0B90B?style=for-the-badge&logo=binance&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## ⚡ Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### 📊 Real-Time Gas Analytics Dashboard
+- Live gas price chart with 5, 20, and 50-period moving averages
+- Visual execution markers highlighting agent actions at local minima
+- Selectable time ranges (1h, 6h, 24h, 7d)
 
-Changes made via Lovable will be committed automatically to this repo.
+### 💰 Savings Tracking
+- Total gas saved in BNB and USD
+- Average savings per transaction (percentage & absolute)
+- Best single execution delta
+- Total transactions optimized
 
-**Use your preferred IDE**
+### 🎯 Efficiency Metrics
+- Prediction accuracy with trend indicators
+- Average wait time before execution
+- Execution efficiency score
+- ROI (gas saved vs. operational cost)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 📜 Transaction History
+- Sortable, filterable transaction table
+- Direct links to BscScan for on-chain verification
+- Color-coded savings indicators
+- Pagination for large datasets
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 🚀 Transaction Scheduling
+- Submit scheduled transactions (target address, calldata, value)
+- Live gas price and predicted optimal execution window
+- Estimated savings range
+- Real-time status tracker (Scheduled → Monitoring → Executing → Completed)
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+## 🛠 Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| **React 18** | UI framework |
+| **TypeScript** | Type safety |
+| **Vite** | Build tool & dev server |
+| **Tailwind CSS** | Utility-first styling |
+| **shadcn/ui** | Component library |
+| **Recharts** | Data visualization |
+| **TanStack Query** | Data fetching & caching |
+| **React Router** | Client-side routing |
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to the project
+cd gas-ninja-bot
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The app will be available at `http://localhost:5173`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 📁 Project Structure
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```
+src/
+├── components/
+│   ├── dashboard/
+│   │   ├── GasTrendChart.tsx      # Gas price chart with moving averages
+│   │   ├── SavingsCards.tsx        # Summary metric cards
+│   │   └── EfficiencyMetrics.tsx   # Prediction & efficiency stats
+│   ├── layout/
+│   │   └── DashboardLayout.tsx     # App shell with navigation
+│   └── ui/                        # shadcn/ui components
+├── lib/
+│   └── mock-data.ts               # Mock data generators
+├── pages/
+│   ├── Index.tsx                   # Main dashboard
+│   ├── TransactionHistory.tsx      # Transaction table
+│   └── ScheduleTransaction.tsx     # Schedule new transactions
+└── App.tsx                        # Root with routing
+```
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 🔮 Roadmap
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- [ ] Wallet connection (MetaMask / WalletConnect)
+- [ ] Live gas data from BNB Chain RPC
+- [ ] Smart contract integration (GasOptimizedExecutor)
+- [ ] Real-time agent prediction API
+- [ ] Push notifications for optimal gas windows
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## 📄 License
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+MIT
