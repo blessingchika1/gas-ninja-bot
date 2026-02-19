@@ -1,47 +1,43 @@
-# 🥷 Gas Ninja Bot
+ Gas Ninja Bot
 
-**Autonomous Gas Intelligence Agent on BNB Chain**
+Autonomous Gas Intelligence Agent on BNB Chain
 
 A production-grade Web3 analytics dashboard for monitoring, predicting, and optimizing gas costs on BNB Chain. The Gas Ninja Bot acts as an autonomous agent that executes transactions at optimal gas prices, saving you money on every interaction.
 
 ![Gas Ninja Bot](https://img.shields.io/badge/BNB_Chain-F0B90B?style=for-the-badge&logo=binance&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 
----
+ Features
 
-## ⚡ Features
-
-### 📊 Real-Time Gas Analytics Dashboard
+ 📊 Real-Time Gas Analytics Dashboard
 - Live gas price chart with 5, 20, and 50-period moving averages
 - Visual execution markers highlighting agent actions at local minima
 - Selectable time ranges (1h, 6h, 24h, 7d)
 
-### 💰 Savings Tracking
+💰 Savings Tracking
 - Total gas saved in BNB and USD
 - Average savings per transaction (percentage & absolute)
 - Best single execution delta
 - Total transactions optimized
 
-### 🎯 Efficiency Metrics
+🎯 Efficiency Metrics
 - Prediction accuracy with trend indicators
 - Average wait time before execution
 - Execution efficiency score
 - ROI (gas saved vs. operational cost)
 
-### 📜 Transaction History
+📜 Transaction History
 - Sortable, filterable transaction table
 - Direct links to BscScan for on-chain verification
 - Color-coded savings indicators
 - Pagination for large datasets
 
-### 🚀 Transaction Scheduling
+🚀 Transaction Scheduling
 - Submit scheduled transactions (target address, calldata, value)
 - Live gas price and predicted optimal execution window
 - Estimated savings range
 - Real-time status tracker (Scheduled → Monitoring → Executing → Completed)
 
----
-
-## 🛠 Tech Stack
+🛠 Tech Stack
 
 | Technology | Purpose |
 |---|---|
@@ -56,7 +52,7 @@ A production-grade Web3 analytics dashboard for monitoring, predicting, and opti
 
 ---
 
-## 🚀 Getting Started
+ 🚀 Getting Started
 
 ```bash
 # Clone the repository
@@ -74,9 +70,8 @@ npm run dev
 
 The app will be available at `http://localhost:5173`.
 
----
 
-## 📁 Project Structure
+ 📁 Project Structure
 
 ```
 src/
@@ -101,7 +96,6 @@ src/
 
 ## 🔮 Roadmap
 
-- [ ] Wallet connection (MetaMask / WalletConnect)
 - [ ] Live gas data from BNB Chain RPC
 - [ ] Smart contract integration (GasOptimizedExecutor)
 - [ ] Real-time agent prediction API
@@ -109,6 +103,4 @@ src/
 
 ---
 
-## 📄 License
 
-MIT
